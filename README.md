@@ -2,7 +2,11 @@
 
 This repository is intended to contain settings files for different editors etc to assist developers working on OpenEyes code to adhere to the Coding Standards. It's hoped that users of different editors will export the settings they use to contribute to this repository.
 
-Settings files should be added to the settings directory.
+# Tool setup
+
+Individual details on editor setups should be provided alongside the settings files. However, to access the appropriate php analysis tools, ```composer install``` should be run within the openeyes directory. 
+
+TODO: the linter tools might be better suited as a composer dependency in this repo so that any project could make use of the same command line tools.
 
 ## PHP
 
