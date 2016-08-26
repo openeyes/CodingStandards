@@ -2,13 +2,18 @@
 
 This repository is intended to contain settings files for different editors etc to assist developers working on OpenEyes code to adhere to the Coding Standards. It's hoped that users of different editors will export the settings they use to contribute to this repository.
 
-Settings files should be added to the settings directory.
+# Tool setup
+
+Individual details on editor setups should be provided alongside the settings files. However, to access the appropriate php analysis tools, ```composer install``` should be run within the openeyes directory. 
+
+TODO: the linter tools might be better suited as a composer dependency in this repo so that any project could make use of the same command line tools.
 
 ## PHP
 
 * Code should adhere to the MUST clauses of the [PSR-2](http://www.php-fig.org/psr/psr-2/) guidelines.
 * Code should be documented using [PHPDoc](http://www.phpdoc.org/).  
-* Where possible in the development of event type modules, call methods on inherited core code rather than reinventing things.  We will continue to improve these available methods.
+* Where possible in the development of event type modules, call methods on inherited core code rather than reinventing things.  We will continue to improve these available methods
+* Variable names. Variables should be named with underscores **not** camelCase. 
 
 The main modules and core code have been checked by PHP CS code fixer to make sure everything is [PSR-2](http://www.php-fig.org/psr/psr-2/) compliant however there are still many inconsistencies in the code in regard to style, particularly with the naming of variables and tab indentation in views. All new code should follow the guidelines, old code should be updated when convenient.
 
