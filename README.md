@@ -8,7 +8,8 @@ Settings files should be added to the settings directory.
 
 * Code should adhere to the MUST clauses of the [PSR-2](http://www.php-fig.org/psr/psr-2/) guidelines.
 * Code should be documented using [PHPDoc](http://www.phpdoc.org/).  
-* Where possible in the development of event type modules, call methods on inherited core code rather than reinventing things.  We will continue to improve these available methods.
+* Where possible in the development of event type modules, call methods on inherited core code rather than reinventing things.  We will continue to improve these available methods
+* Variable names. Variables should be named with underscores **not** camelCase. 
 
 The main modules and core code have been checked by PHP CS code fixer to make sure everything is [PSR-2](http://www.php-fig.org/psr/psr-2/) compliant however there are still many inconsistencies in the code in regard to style, particularly with the naming of variables and tab indentation in views. All new code should follow the guidelines, old code should be updated when convenient.
 
